@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>路由:锚点值</title>
+</head>
+<body>
+    
+    <a href="#/movie">电影</a>
+    <a href="#/music">音乐</a>
+    <a href="#/friend">好友</a>
+
+
+    <div id="d" style="background-color: red;height: 200px;">
+        
+    </div>
+
+    <script type="text/javascript">
+        // 监视锚点值的改变
+        window.addEventListener('hashchange',function(){
+            console.log(location.hash);
+            var html = '';
+            //判断用户的点击，渲染div元素
+            switch(location.hash){
+                case '#/movie':
+                    html = '雷神、摔跤吧爸爸！、银翼杀手';
+                    break;
+                case '#/music':
+                    html = '告白气球、滑板鞋、我在人民广场吃炸鸡';
+                    break;
+                case '#/friend':
+                    html = '小明、小红、小花';
+                    break;
+            }
+
+            document.getElementById('d').innerHTML = html;
+
+
+        })
+
+
+    </script>
+
+
+</body>
+</html>

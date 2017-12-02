@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>readme.md—C:\Users\tujunxiong\Desktop\传智31期\11-VUE-第3天-vue-router\4-源代码</title>
+    <style type="text/css">
+    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type="checkbox"],input[type="radio"]{box-sizing: border-box;padding: 0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height: auto}input[type="search"]{-webkit-appearance: textfield;box-sizing: content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: ""}hr:after,.rule:after{display: table;clear: both;content: ""}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url("/public/images/github-status.png");width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea')";border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body>*:first-child{margin-top: 0 !important}.markdown-body>*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li>p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote>:first-child{margin-top: 0}.markdown-body blockquote>:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame>span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right>span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: "\00a0"}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre>code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
+    </style>
+    <style type="text/css">
+      .markdown-body hr{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC")}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="markup">
+        <article id="content" class="markdown-body">
+          <h3>准备开始</h3>
+<hr>
+<h4>学员反馈</h4>
+<p>VueBus的几个方法还不太清楚。
+    vm的方法
+        注册事件(存函数):  vm.$on('事件名',fn)       function(n1,n2){   }
+        触发事件(取函数):  vm.$emit('事件名',1,2)
+        注册执行一次的事件:vm.once('事件名',fn) 
+        取消事件vm.off('事件名')
+    应用场景
+        父向子传值通过属性
+            子向父，兄弟间通信，使用vueBus来完成</p>
+<p>老师 ,使用Es6模版中的引入问题能在讲一下么
+    ES6模块导入导出。详细的说一下</p>
+<p>老师 CRUD部分 更新那一块 为什么只返回他的id 不返回他的name 如果这样用findIndex行吗 删除那一块 为什么只返回他的id 就能把整个删除了</p>
+<div class="codehilite"><pre>ES6 找元素，找索引
+
+var obj = arr.find(function(ele,index,arr){
+    //当return的结果为true的时候，结束遍历，并返回当前元素,false继续遍历
+    return ele.id == this.updateid;
+
+});
+</pre></div>
+
+
+<p>老师Vue做什么项目比较好呢</p>
+<p>将近一个小时才把增删改查写完,找了好多错误</p>
+<p>生命周期 那块 不是很明白</p>
+<p>老师,组件methods函数中的this以及this的父级总是弄不清楚,希望再讲下</p>
+<p>今天我不在</p>
+<p>delHero(){ 
+  var findIndex = this.heros.findIndex( ele =&gt;{ 
+    return ele.id == this.delid; 
+  }); 
+this.heros.splice(findIndex,1); </p>
+<p>} </p>
+<p>updateHero(){ 
+    var hero = this.heros.find( ele =&gt;{ 
+        return ele.id == this.updateid; 
+    }); 
+    hero.name = this.updatename; 
+} 这两个有点不明白</p>
+<h4>复习</h4>
+<ul>
+<li>options</li>
+</ul>
+<h4>ES6模块</h4>
+<ul>
+<li>默认导入导出<ul>
+<li>入 <code>import Xxx from './xxx.js';</code></li>
+<li>出 <code>export default {};</code></li>
+<li>总结: 导出随便什么数据，导入随便叫什么名字</li>
+</ul>
+</li>
+<li>
+<p>声明式导入导出(将导出数据装在一个对象中)</p>
+<ul>
+<li>出<ul>
+<li><code>export var num = 1;</code></li>
+<li><code>export var num2 = 2;</code></li>
+<li>直接导出已声明的变量<ul>
+<li><code>export { num3  }</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>入:<ul>
+<li><code>import {num,num2} from './xxx.js'</code></li>
+<li>总结:声明式导入的时候名字，要一致</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>总结：</p>
+<ul>
+<li>默认导入导出，不用在意名称</li>
+<li>声明式导入导出，名称必须一致<ul>
+<li>声明并导出 <code>export var xxx = 1;</code></li>
+<li>声明后导出 <code>var xxx= 1; export {xxx}</code></li>
+<li>导入都是根据名称来<ul>
+<li><code>import {xxx} from './xxx.js';</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>全体导入<ul>
+<li><code>import * as obj from './xxx.js';</code></li>
+<li><code>{ default:默认导出,xxx:声明导出 }</code></li>
+</ul>
+</li>
+<li>export 和 import只能在顶级作用域中，不能包含在{}中</li>
+</ul>
+</li>
+</ul>
+<h4>总结ES6模块</h4>
+<ul>
+<li>默认导入 <code>import Cal from 'cal';</code>  具备+-*/<ul>
+<li>引入别人提供的包的入口</li>
+</ul>
+</li>
+<li>按需引入 <code>import {add,substract}</code> 具备加和减<ul>
+<li>只要部分对象数据</li>
+</ul>
+</li>
+</ul>
+<h4>今日重点</h4>
+<ul>
+<li>路由</li>
+<li>路由的核心:<ul>
+<li>锚点值的改变，影响页面中局部数据的innerHTML的改变</li>
+</ul>
+</li>
+</ul>
+<h3>路由</h3>
+<hr>
+<h4>路由原理</h4>
+<ul>
+<li>基于监视锚点值的改变，不刷新页面，替换页面中的局部内容</li>
+</ul>
+<h4>基本使用</h4>
+<ul>
+<li>vue中的核心插件 vue-router</li>
+<li>1:在引入Vue后引入Vue-router</li>
+<li>2:安装插件 (<code>Vue.use(VueRouter)</code>)<ul>
+<li>全局组件</li>
+<li>挂载一些对象供我们使用 </li>
+</ul>
+</li>
+<li>3:创建一个新的路由对象<ul>
+<li><code>var router = new VueRouter(options)</code></li>
+</ul>
+</li>
+<li>4:配置路由规则<ul>
+<li>options:<code>{ routes:[ router,router,router] }</code>  </li>
+<li>router:<code>{ path:'/music',component:Home  }</code></li>
+<li>Home表示options也就是组件对象</li>
+</ul>
+</li>
+<li>5:将配置好的路由对象，交给Vue的options<ul>
+<li><code>new Vue({  router:router  })</code></li>
+</ul>
+</li>
+<li>
+<p>6:留坑(App.js template中)</p>
+<ul>
+<li><code>&lt;router-view&gt;&lt;/router-view&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>引入插件，安装插件，配置规则，交给Vue，记得留坑</p>
+</li>
+</ul>
+<h4>插件安装原理</h4>
+<ul>
+<li>插件方定义install函数，接受Vue对象</li>
+<li>1:使用Vue注册全局组件</li>
+<li>2:给Vue原型挂载属性，提供对象的功能<ul>
+<li>Vue的实例，也就是vm或者组件内的this,可以直接.$route使用</li>
+</ul>
+</li>
+</ul>
+<h4>router-link</h4>
+<ul>
+<li>是在Vue.use后，插件给我们注册的全局组件</li>
+<li>使用方式:<ul>
+<li>1基本: <code>&lt;router-link to="/xxxx"&gt;音乐&lt;/router-link&gt;</code></li>
+<li>2对象的方式: <code>&lt;router-link :to="{ name:'music'}"&gt;音乐&lt;/router-link&gt;</code><ul>
+<li>给路由规则来个name属性</li>
+<li>main.js中<code>{ name:'music',path:'/mymusic',component:Music}</code></li>
+</ul>
+</li>
+<li>匹配并生成href的机制<ul>
+<li>1:通过to属性拿到对象的name，知道找那个路由规则</li>
+<li>2:根据其path属性，来生成router-link最终的href</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>命名路由</h4>
+<ul>
+<li>一条有名字的路由规则</li>
+<li>main.js中<code>{ name:'music',path:'/mymusic',component:Music}</code></li>
+</ul>
+<h4>参数router-link</h4>
+<ul>
+<li>1:去哪里?<ul>
+<li><code>&lt;router-link :to="{name:'bj',query:{id:'1'}  }"&gt;&lt;/router-link&gt;</code></li>
+<li>生成href <code>#/beijing?id=1</code></li>
+</ul>
+</li>
+<li>2:导航<ul>
+<li><code>{ name:'bj',path:'/beijing',component:BeiJing  }</code></li>
+</ul>
+</li>
+<li>
+<p>3:去了干嘛（组件已经匹配后）</p>
+<ul>
+<li>获取路由参数，发起ajax请求，把数据渲染到页面</li>
+<li>created钩子函数<ul>
+<li><code>this.$route.query.id</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>url参数</p>
+<ul>
+<li>查询字符串  /beijing?id=1    req.query.id</li>
+<li>path方式    /beijing/1    </li>
+<li>get('/beijing/:id')规则中要声明哪一段是参数   req.params.id</li>
+</ul>
+</li>
+<li>
+<p>使用path的方式</p>
+<ul>
+<li>1: 去哪里 <ul>
+<li><code>&lt;router-link :to="{ name:'detail2',params:{id2:'1'}    } "&gt;查看详情&lt;/router-link&gt;</code></li>
+</ul>
+</li>
+<li>2: 导航<ul>
+<li><code>{name:'detail2',path:'/detail/:id2',component:Detail}</code></li>
+</ul>
+</li>
+<li>3: 去了干嘛<ul>
+<li>获取路由参数</li>
+<li><code>this.$route.params.id2</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>params方式与query方式<ul>
+<li>代码区别在于param要在路由规则中体现参数放置的位置</li>
+</ul>
+</li>
+</ul>
+<h4>vue-router中的对象</h4>
+<ul>
+<li>路由信息对象 $route<ul>
+<li>$route.params</li>
+<li>$route.query</li>
+</ul>
+</li>
+<li>路由功能对象 $router<ul>
+<li>根据浏览器历史记录，前进或后退$router.go(1)</li>
+<li>通过程序来改变锚点值 $router.push();</li>
+</ul>
+</li>
+</ul>
+<h4>多视图(命名视图)</h4>
+<ul>
+<li>避免大家初期敲代码的错误</li>
+<li>
+<p>更为灵活的维护，灵活的配置修改显示的效果</p>
+</li>
+<li>
+<p><code>{ name:'xxx',path:'/xx',component:Home}</code></p>
+</li>
+<li>
+<p><code>{ name:'xxx',path:'/xx',components:{ 坑名:组件,坑名:组件 }   }</code></p>
+<ul>
+<li>默认  坑名是default <code>&lt;router-view&gt;&lt;/router-view&gt;</code></li>
+<li>有名的坑 <code>&lt;router-view name="坑名"&gt;&lt;/router-view&gt;</code></li>
+</ul>
+</li>
+<li>
+<p>component就是一次填一个坑，代码多了比较不灵活不好维护</p>
+</li>
+<li>components一次填入多个坑，将组件代码分散，比较好维护<ul>
+<li>更改结构，可以进行配置性的修改，在main.js文件中</li>
+</ul>
+</li>
+</ul>
+<h4>动态追加路由规则addRoutes</h4>
+<ul>
+<li>addRoutes([路由对象1,路由对象2])</li>
+</ul>
+<h4>嵌套路由</h4>
+<ul>
+<li>
+<p>案例</p>
+<ul>
+<li>进入我的主页显示：电影、歌曲</li>
+</ul>
+</li>
+<li>
+<p>应用场景</p>
+<ul>
+<li>当应用中需要，变化中存在变化，使用嵌套路由</li>
+</ul>
+</li>
+<li>好处<ul>
+<li>避免重复渲染</li>
+</ul>
+</li>
+<li>单页应用框架开发多页应用 -&gt; 嵌套路由实现</li>
+</ul>
+<h4>重定向及404</h4>
+<ul>
+<li>重定向写在路由规则最上<ul>
+<li>重定向<code>{ path:'/',redirect:{ name:'home'}   }</code></li>
+</ul>
+</li>
+<li>404写在规则最下<ul>
+<li><code>{ path:'*', component:NotFound}</code></li>
+</ul>
+</li>
+</ul>
+<h4>知识点介绍</h4>
+<ul>
+<li>路由meta元数据</li>
+<li>路由钩子</li>
+</ul>
+<h4>案例-登录</h4>
+<ul>
+<li>
+<p>url：
+    /user/login
+    /music/add-music    meta:{ checkLogin:true}
+    /music/list-music   meta:{ checkLogin:true}</p>
+<p>需要在锚点值匹配后，决定是否放行，如果需要检查login,来检查，检查好了放行
+* 需求:
+- 没有登录不允许访问/music页面</p>
+</li>
+</ul>
+<h4>总结</h4>
+<ul>
+<li>路由对象的元数据<ul>
+<li>这条路由规则需要验证</li>
+<li><code>{ name:'xxx',path:'/xxxx',component:Xxx,meta:{ isLogin:true  }  }</code></li>
+</ul>
+</li>
+<li>钩子守卫</li>
+</ul>
+<div class="codehilite"><pre>    <span class="nx">router</span><span class="p">.</span><span class="nx">beforeEach</span><span class="p">(</span> <span class="p">(</span><span class="nx">to</span><span class="p">,</span><span class="nx">from</span><span class="p">,</span><span class="nx">next</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">to</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">isLogin</span><span class="p">){</span>
+            <span class="c1">//验证登录</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">isLogined</span><span class="p">()){</span>
+                    <span class="nx">next</span><span class="p">();</span>
+                <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                    <span class="nx">next</span><span class="p">({</span>
+                            <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;login&#39;</span>
+                        <span class="p">})</span>
+                <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+</pre></div>
+
+
+<h4>编程式导航</h4>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
